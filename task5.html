@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form action="process_registration.php" method="post">
+        <table>
+            <tr>
+                <td><label for="first_name">First Name:</label></td>
+                <td><input type="text" id="first_name" name="first_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" name="last_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="confirm_password">Re-enter Password:</label></td>
+                <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone_number">Phone Number:</label></td>
+                <td><input type="tel" id="phone_number" name="phone_number" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="albania">Albania</option>
+                        <option value="algeria">India</option>
+                        <!-- Add more countries here -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Languages:</label></td>
+                <td>
+                    <input type="checkbox" id="english" name="languages[]" value="english">
+                    <label for="english">English</label>
+
+                    <input type="checkbox" id="Kannada" name="languages[]" value="Kannada">
+                    <label for="spanish">Kannada</label>
+
+                    <input type="checkbox" id="Hindi" name="languages[]" value="Hindi">
+                    <label for="Hindi">Hindi</label>
+
+                    <input type="checkbox" id="Telgu" name="languages[]" value="Telgu">
+                    <label for="Telgu">Telgu</label>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>
+                        <input type="checkbox" name="declaration" required> Hereby I declare all the given details are
+                        true
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>Log in to <a href="#">Ethnus Website</a>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
